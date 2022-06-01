@@ -3,7 +3,7 @@ def print_last_digit(number):
     if number >= 0:
         num =  number % 10
     else:
-        number = number * -1
+        number = -number
         num = number % 10
-    print(num, end = '')
+    print(num, end='')
     return num
