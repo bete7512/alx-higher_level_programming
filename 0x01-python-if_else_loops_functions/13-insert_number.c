@@ -7,11 +7,12 @@
 
 listint_t *insert_node(listint_t **head, int number)
 {
-	if (head == NULL || *head == NULL)
-		return NULL;
-
 	listint_t *temp;
 	listint_t *header = *head;
+
+	if (head == NULL || *head == NULL)
+                return NULL;
+
 	temp = malloc(sizeof(listint_t));
 	if (temp == NULL)
 		return NULL;
