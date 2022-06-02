@@ -4,6 +4,7 @@ if __name__ == "__main__":
     from calculator_1 import add, sub, div, mul
     num = len(sys.argv)
     if num != 4:
+        print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
     op = sys.argv[2]
     a = int(sys.argv[1])
@@ -17,5 +18,5 @@ if __name__ == "__main__":
     elif op == '-':
         print("{} {} {} = {}".format(a, op, b, sub(a, b)))
     else:
-        print("enter valid operator")
+        print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
