@@ -15,12 +15,13 @@ if __name__ == "__main__":
             mul = a * b
             print("{} {} {} = {}".format(a, ch, b, mul))
         elif ch == '/':
-            div = int(sys.argv[1]) / int(sys.argv[3])
-            print("{} {} {} = {}".format(int(sys.argv[1]), ch, int(sys.argv[3]), div))
+            a = int(sys.argv[1])
+            b = int(sys.argv[3])
+            div = a / b
+            print("{} {} {} = {}".format(a, ch, b, div))
         elif ch == '-':
             sub = int(sys.argv[1]) - int(sys.argv[3])
             print("{} {} {} = {}".format(int(sys.argv[1]), ch, int(sys.argv[3]), sub))
         else:
             print("enter valid operator")
             exit(1)
-
