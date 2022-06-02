@@ -2,13 +2,12 @@
 if __name__ == "__main__":
     import sys
     num = len(sys.argv)
-    if num - 1 == 0:
-        print("{}: arguments.".format(num - 1))
-    elif num - 1 == 1:
-        print("{} arguments:".format(num-1))
-        print("{}: {}".format(num - 1, sys.argv[1]))
+    count = num - 1
+    if num == 1:
+        print("{}: arguments.".format(count))
+    elif num == 2:
+        print("{} argument:".format(count))
     else:
+        print("{} arguments:".format(count))
         for i in range(1, num):
-            if i==1:
-                print("{} arguments:".format(num - 1))
             print("{}: {}".format(i, sys.argv[i]))
