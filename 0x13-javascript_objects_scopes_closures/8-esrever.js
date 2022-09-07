@@ -2,7 +2,7 @@
 'use strict';
 exports.esrever = function (list) {
   const hold = [];
-  list.array.forEach(element => {
-    hold;
+  list.forEach((element) => {
+    hold.push(element);
   });
 };
