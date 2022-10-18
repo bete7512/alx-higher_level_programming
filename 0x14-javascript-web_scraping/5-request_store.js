@@ -1,9 +1,9 @@
 #!/usr/bin/node
 'use strict';
-const request = require('request');
 const fs = require('fs');
+const request = require('request');
 
-request(process.argv[2], { json: true }, (error, response, data) => {
+request(process.argv[2], (error, response, data) => {
   if (error) {
     console.log(error);
   } else {
