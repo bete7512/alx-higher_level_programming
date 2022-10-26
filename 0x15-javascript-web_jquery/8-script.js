@@ -1,3 +1,3 @@
 $.get('https://swapi-api.hbtn.io/api/films/?format=json', (response) => {
-  $('ul#list_movies').append(...response.map(movie => `<li>${movie.title}</li>`));
+  $('UL#list_movies').append(...response.results.map(movie => `<li>${movie.title}</li>`));
 });
