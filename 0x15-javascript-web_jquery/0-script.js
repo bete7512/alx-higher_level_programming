@@ -1,1 +1,1 @@
-document.querySelector()
+document.querySelector('header')
